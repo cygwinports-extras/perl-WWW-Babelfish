@@ -1,0 +1,70 @@
+perl-WWW-Babelfish
+-------------------------------------------
+This module is a simple perl front-end to the Babelfish translation
+server.  It makes an attempt at breaking longer pieces of text up into 
+chunks that Babelfish can handle and then reassembling them. This 
+version also contains preliminary support for the Google translation 
+engine.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  perl-5.8.7-5
+  perl-HTML-Parser-3.37-2
+  perl-IO-String-1.05-2
+  perl-libwww-perl-5.801-2
+
+Canonical homepage:
+  http://search.cpan.org/~durist/WWW-Babelfish/
+
+Canonical download:
+  http://www.cpan.org/authors/id/D/DU/DURIST/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-WWW-Babelfish-0.15-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-WWW-Babelfish-0.15-X.cygport all
+
+This will create:
+  /usr/src/perl-WWW-Babelfish-0.15-X-src.tar.bz2
+  /usr/src/perl-WWW-Babelfish-0.15-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/perl-WWW-Babelfish.sh
+  /usr/lib/perl5/vendor_perl/5.8/WWW/Babelfish.pm
+  /usr/lib/perl5/vendor_perl/5.8/auto/WWW/Babelfish/autosplit.ix
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/WWW/Babelfish/.packlist
+  /usr/share/doc/Cygwin/perl-WWW-Babelfish-0.15.README
+  /usr/share/doc/perl-WWW-Babelfish-0.15/Changes
+  /usr/share/doc/perl-WWW-Babelfish-0.15/README
+  /usr/share/man/man3/WWW.Babelfish.3pm.gz
+  /usr/share/perl/cygwin-pods/5.8/WWW-Babelfish.pod
+
+------------------
+
+Port Notes:
+
+----- version 0.15-1 -----
+Version bump.
+
+----- version 0.14-1 -----
+Version bump.
+
+----- version 0.13-1 -----
+Version bump.
+
+----- version 0.12-2 -----
+Rebuilt for perl-5.8.6.
+
+----- version 0.12-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

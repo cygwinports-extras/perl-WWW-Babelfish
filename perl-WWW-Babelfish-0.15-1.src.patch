@@ -1,0 +1,17 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap origsrc/WWW-Babelfish-0.15/Makefile.PL src/WWW-Babelfish-0.15/Makefile.PL
+--- origsrc/WWW-Babelfish-0.15/Makefile.PL	2003-10-21 13:20:04.000000000 -0500
++++ src/WWW-Babelfish-0.15/Makefile.PL	2006-06-11 17:42:04.624375000 -0500
+@@ -9,13 +9,8 @@
+ );
+ 
+ if($s){
+-  if (prompt("Since you're connected to the internet, do you want to run a translation test?", "n") =~ /^y/i) {
+     open(ENABLED, ">TTEST") || die "Can't touch ./t/online.enabled $!";
+     close(ENABLED);
+-  }
+-  else {
+-    unlink("TTEST");
+-  }
+ }
+ else{
+   print "You're not connected to the internet, so we'll skip the translation test.\n\n";
