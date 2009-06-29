@@ -1,5 +1,5 @@
 category: Perl
-requires: cygwin perl perl-HTML-Parser perl-IO-String perl-libwww-perl
+requires: perl perl-HTML-Parser perl-IO-String perl-libwww-perl
 sdesc: "Perl frontend for Babelfish translation"
 ldesc: "This module is a simple perl front-end to the Babelfish 
 translation server.  It makes an attempt at breaking longer pieces of 
